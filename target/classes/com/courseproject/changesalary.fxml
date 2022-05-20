@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.courseproject.ChangeSalaryController">
+   <children>
+      <Pane layoutX="445.0" layoutY="103.0" prefHeight="206.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="pane">
+         <children>
+            <Pane layoutX="18.0" layoutY="36.0" prefHeight="32.0" prefWidth="164.0">
+               <children>
+                  <Text layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mo" />
+                  <TextField fx:id="moSt" editable="false" layoutX="37.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="8:00" styleClass="defInput" />
+                  <TextField fx:id="moFn" editable="false" layoutX="107.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="18:00" styleClass="defInput" />
+                  <Text layoutX="95.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+               </children>
+            </Pane>
+            <Pane layoutX="18.0" layoutY="67.0" prefHeight="32.0" prefWidth="164.0">
+               <children>
+                  <Text layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tu" />
+                  <TextField fx:id="tuSt" editable="false" layoutX="37.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="8:00" styleClass="defInput" />
+                  <TextField fx:id="tuFn" editable="false" layoutX="107.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="18:00" styleClass="defInput" />
+                  <Text layoutX="95.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+               </children>
+            </Pane>
+            <Pane layoutX="18.0" layoutY="98.0" prefHeight="32.0" prefWidth="164.0">
+               <children>
+                  <Text layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We" />
+                  <TextField fx:id="weSt" editable="false" layoutX="37.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="8:00" styleClass="defInput" />
+                  <TextField fx:id="weFn" editable="false" layoutX="107.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="18:00" styleClass="defInput" />
+                  <Text layoutX="95.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+               </children>
+            </Pane>
+            <Pane layoutX="18.0" layoutY="129.0" prefHeight="32.0" prefWidth="164.0">
+               <children>
+                  <Text layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Th" />
+                  <TextField fx:id="thSt" editable="false" layoutX="37.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="8:00" styleClass="defInput" />
+                  <TextField fx:id="thFn" editable="false" layoutX="107.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="18:00" styleClass="defInput" />
+                  <Text layoutX="95.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+               </children>
+            </Pane>
+            <Pane layoutX="18.0" layoutY="160.0" prefHeight="32.0" prefWidth="164.0">
+               <children>
+                  <Text layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fr" />
+                  <TextField fx:id="frSt" editable="false" layoutX="37.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="8:00" styleClass="defInput" />
+                  <TextField fx:id="frFn" editable="false" layoutX="107.0" layoutY="3.0" prefHeight="25.0" prefWidth="52.0" promptText="18:00" styleClass="defInput" />
+                  <Text layoutX="95.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+               </children>
+            </Pane>
+            <Text layoutX="60.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Work Schedule" />
+         </children>
+      </Pane>
+      <Pane layoutX="49.0" layoutY="48.0" prefHeight="41.0" prefWidth="236.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="pane">
+         <children>
+            <Text layoutX="7.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="regular" text="Change Salary" textAlignment="CENTER" wrappingWidth="221.315673828125">
+               <font>
+                  <Font name="Open Sans Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="49.0" layoutY="103.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="264.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="pane">
+         <children>
+            <TextField fx:id="name" layoutX="25.0" layoutY="108.0" promptText="Name" styleClass="defInput" />
+            <Text layoutX="25.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="150.5078125" />
+            <TextField fx:id="position" editable="false" layoutX="199.0" layoutY="108.0" promptText="Position" styleClass="defInput" />
+            <Text layoutX="199.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position" wrappingWidth="150.5078125" />
+            <TextField fx:id="salary" layoutX="199.0" layoutY="166.0" promptText="Salary" styleClass="defInput" />
+            <Text layoutX="199.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" wrappingWidth="150.5078125" />
+            <TextField fx:id="bonus" layoutX="25.0" layoutY="166.0" promptText="Bonus" styleClass="defInput" />
+            <Text layoutX="25.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" wrappingWidth="150.5078125" />
+            <ComboBox fx:id="chooseUser" layoutX="25.0" layoutY="27.0" prefHeight="32.0" prefWidth="324.0" promptText="Choose user" styleClass="defInput" />
+            <Text fx:id="errorLabel" fill="#ff4c4c" layoutX="26.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="24.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="butSave" layoutX="445.0" layoutY="323.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 10;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="apply" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@director.css" />
+   </stylesheets>
+</Pane>

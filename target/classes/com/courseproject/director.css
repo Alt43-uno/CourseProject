@@ -1,0 +1,66 @@
+#main {
+    -fx-background-color: linear-gradient(to top right,#0ba360, #3cba92);
+}
+.button {
+    -fx-background-color: linear-gradient(to top right,#3cba92, #2cee36);
+}
+.button:hover {
+    -fx-background-color: linear-gradient(to top right, #246b56, #1da423);
+}
+.button.menu {
+    -fx-background-color: linear-gradient(to top right, #0ba360, #31c733);
+}
+.button.menu:hover {
+    -fx-background-color: linear-gradient(to top right, #06623c, #1f8021);
+}
+
+.table-menu {
+    -fx-background-color: #326234;
+}
+.table-view {
+    -fx-border-width: 0;
+
+}
+.table-view .column-header-background{
+    -fx-background-color: #326234;
+    -fx-border-width: 0;
+}
+.circle-pane {
+    -fx-background-color: #1eff65;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+}
+.defInput {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #14e637;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+}
+
+
+* {
+    -fx-primary-color: #007acc;
+    -fx-secondary-color: #4B6EAF;
+
+    -fx-focus-color: -fx-secondary-color;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: -fx-primary-color;
+    -fx-background-radius: 0;
+}
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: -fx-secondary-color;
+}
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+    -fx-background-color: -fx-secondary-color;
+}
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}

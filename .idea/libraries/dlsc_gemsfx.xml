@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="dlsc.gemsfx" type="repository">
+    <properties maven-id="com.dlsc.gemsfx:gemsfx:1.45.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/gemsfx-1.45.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/unitfx-1.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/indriya-2.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/unit-api-2.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/uom-lib-common-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.inject-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pickerfx-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-validator-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/retrofit-2.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okhttp-3.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okio-1.15.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-controls-18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-controls-18-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-graphics-18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-graphics-18-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-base-18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-base-18-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-swing-18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-swing-18-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-fxml-18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-fxml-18-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-11.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ikonli-core-12.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ikonli-materialdesign-pack-12.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ikonli-javafx-12.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

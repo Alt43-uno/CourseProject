@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane id="main" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.courseproject.DirectorController">
+   <children>
+      <Circle fill="#ffffff1e" radius="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <StackPane.margin>
+            <Insets right="700.0" top="500.0" />
+         </StackPane.margin>
+      </Circle>
+      <Circle fill="#ffffff1e" radius="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <StackPane.margin>
+            <Insets left="800.0" top="-200.0" />
+         </StackPane.margin>
+      </Circle>
+      <Circle fill="#ffffff1e" radius="120.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <StackPane.margin>
+            <Insets left="700.0" top="500.0" />
+         </StackPane.margin>
+      </Circle>
+      <Pane id="logBlock" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="878.0" style="-fx-background-radius: 20;" stylesheets="@style.css">
+         <children>
+            <Text layoutX="63.0" layoutY="85.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="extrabold" text="Director Panel" wrappingWidth="321.599951171875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DisplacementMap>
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Text>
+            <Button fx:id="profile_but" layoutX="382.0" layoutY="63.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-radius: 7;" text="Profile" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="stats_but" layoutX="485.0" layoutY="63.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-radius: 7;" text="Stats" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="emp_table" layoutX="587.0" layoutY="63.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" style="-fx-background-radius: 7;" text="Employee table" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="logout" layoutX="720.0" layoutY="63.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-radius: 7;" text="LOG OUT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="logout" />
+                  <String fx:value="bold" />
+               </styleClass>
+            </Button>
+            <AnchorPane fx:id="tableBlock" layoutX="62.0" layoutY="115.0" prefHeight="369.0" prefWidth="748.0" visible="false">
+               <children>
+                  <TableView fx:id="DirTable" editable="true" prefHeight="311.0" prefWidth="748.0">
+                    <columns>
+                      <TableColumn fx:id="IDColumn" prefWidth="36.0" text="ID" />
+                      <TableColumn fx:id="NameColumn" prefWidth="183.99998474121094" text="NAME" />
+                        <TableColumn fx:id="RoleColumn" minWidth="0.0" prefWidth="104.800048828125" text="ROLE" />
+                        <TableColumn fx:id="PositionColumn" prefWidth="108.800048828125" text="POSITION" />
+                        <TableColumn fx:id="SalaryColumn" prefWidth="144.800048828125" text="SALARY" />
+                        <TableColumn fx:id="BonusColumn" prefWidth="71.99993896484375" text="BONUS" />
+                        <TableColumn fx:id="StatusColumn" prefWidth="96.7999267578125" text="STATUS" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="ChangeSalaryButtom" contentDisplay="CENTER" layoutY="317.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="39.0" styleClass="menu" textAlignment="CENTER">
+                     <graphic>
+                        <SVGPath content="M18.303,4.742l-1.454-1.455c-0.171-0.171-0.475-0.171-0.646,0l-3.061,3.064H2.019c-0.251,0-0.457,0.205-0.457,0.456v9.578c0,0.251,0.206,0.456,0.457,0.456h13.683c0.252,0,0.457-0.205,0.457-0.456V7.533l2.144-2.146C18.481,5.208,18.483,4.917,18.303,4.742 M15.258,15.929H2.476V7.263h9.754L9.695,9.792c-0.057,0.057-0.101,0.13-0.119,0.212L9.18,11.36h-3.98c-0.251,0-0.457,0.205-0.457,0.456c0,0.253,0.205,0.456,0.457,0.456h4.336c0.023,0,0.899,0.02,1.498-0.127c0.312-0.077,0.55-0.137,0.55-0.137c0.08-0.018,0.155-0.059,0.212-0.118l3.463-3.443V15.929z M11.241,11.156l-1.078,0.267l0.267-1.076l6.097-6.091l0.808,0.808L11.241,11.156z" fill="WHITE" scaleX="1.5" scaleY="1.5" scaleZ="1.5" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="refresh" contentDisplay="CENTER" layoutX="90.0" layoutY="317.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="39.0" styleClass="menu" textAlignment="CENTER">
+                     <graphic>
+                        <SVGPath content="M12.319,5.792L8.836,2.328C8.589,2.08,8.269,2.295,8.269,2.573v1.534C8.115,4.091,7.937,4.084,7.783,4.084c-2.592,0-4.7,2.097-4.7,4.676c0,1.749,0.968,3.337,2.528,4.146c0.352,0.194,0.651-0.257,0.424-0.529c-0.415-0.492-0.643-1.118-0.643-1.762c0-1.514,1.261-2.747,2.787-2.747c0.029,0,0.06,0,0.09,0.002v1.632c0,0.335,0.378,0.435,0.568,0.245l3.483-3.464C12.455,6.147,12.455,5.928,12.319,5.792 M8.938,8.67V7.554c0-0.411-0.528-0.377-0.781-0.377c-1.906,0-3.457,1.542-3.457,3.438c0,0.271,0.033,0.542,0.097,0.805C4.149,10.7,3.775,9.762,3.775,8.76c0-2.197,1.798-3.985,4.008-3.985c0.251,0,0.501,0.023,0.744,0.069c0.212,0.039,0.412-0.124,0.412-0.34v-1.1l2.646,2.633L8.938,8.67z M14.389,7.107c-0.34-0.18-0.662,0.244-0.424,0.529c0.416,0.493,0.644,1.118,0.644,1.762c0,1.515-1.272,2.747-2.798,2.747c-0.029,0-0.061,0-0.089-0.002v-1.631c0-0.354-0.382-0.419-0.558-0.246l-3.482,3.465c-0.136,0.136-0.136,0.355,0,0.49l3.482,3.465c0.189,0.186,0.568,0.096,0.568-0.245v-1.533c0.153,0.016,0.331,0.022,0.484,0.022c2.592,0,4.7-2.098,4.7-4.677C16.917,9.506,15.948,7.917,14.389,7.107 M12.217,15.238c-0.251,0-0.501-0.022-0.743-0.069c-0.212-0.039-0.411,0.125-0.411,0.341v1.101l-2.646-2.634l2.646-2.633v1.116c0,0.174,0.126,0.318,0.295,0.343c0.158,0.024,0.318,0.034,0.486,0.034c1.905,0,3.456-1.542,3.456-3.438c0-0.271-0.032-0.541-0.097-0.804c0.648,0.719,1.022,1.659,1.022,2.66C16.226,13.451,14.428,15.238,12.217,15.238" fill="WHITE" scaleX="1.5" scaleY="1.5" scaleZ="1.5" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ComboBox fx:id="sr_st" layoutX="597.0" layoutY="317.0" prefHeight="27.0" prefWidth="150.0" promptText="Sort by Status" styleClass="defInput">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+                  <Button fx:id="searchButton" contentDisplay="CENTER" layoutX="45.0" layoutY="317.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="39.0" styleClass="menu" textAlignment="CENTER">
+                     <graphic>
+                        <SVGPath content="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z" fill="WHITE" scaleX="1.5" scaleY="1.5" scaleZ="1.5" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="profileBlock" layoutX="63.0" layoutY="117.0" prefHeight="369.0" prefWidth="748.0">
+               <children>
+                  <Text fx:id="position" fill="#13c121" layoutX="165.0" layoutY="125.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="extrabold" text="Position" wrappingWidth="310.599951171875">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <DisplacementMap>
+                           <mapData>
+                              <FloatMap />
+                           </mapData>
+                        </DisplacementMap>
+                     </effect>
+                  </Text>
+                  <Text fx:id="name" layoutX="165.0" layoutY="103.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="extrabold" text="Name Of User" wrappingWidth="310.599951171875">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <effect>
+                        <DisplacementMap>
+                           <mapData>
+                              <FloatMap />
+                           </mapData>
+                        </DisplacementMap>
+                     </effect>
+                  </Text>
+                  <Text layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bold" text="My Profile">
+                     <font>
+                        <Font name="Open Sans Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <Circle fx:id="avatar" fill="#1fff55" layoutX="60.0" layoutY="147.0" radius="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="shadow" />
+                  <Hyperlink fx:id="editAvatar" layoutX="28.0" layoutY="212.0" styleClass="regular" text="Edit image" textFill="#13c121" />
+                  <Button fx:id="editPass" layoutY="249.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" styleClass="regular" text="Change password" textAlignment="CENTER">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="165.0" layoutY="230.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="extrabold" text="My salary:" wrappingWidth="100.00000000000023">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <DisplacementMap>
+                           <mapData>
+                              <FloatMap />
+                           </mapData>
+                        </DisplacementMap>
+                     </effect>
+                  </Text>
+                  <ComboBox fx:id="period" layoutX="165.0" layoutY="167.0" prefHeight="23.0" prefWidth="120.0" promptText="Choose period" styleClass="defInput" stylesheets="@style.css" />
+                  <Text fx:id="salary" fill="#13c121" layoutX="258.0" layoutY="231.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="extrabold" text="100.000 soms" wrappingWidth="310.599951171875">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <DisplacementMap>
+                           <mapData>
+                              <FloatMap />
+                           </mapData>
+                        </DisplacementMap>
+                     </effect>
+                  </Text>
+                  <GridPane layoutX="515.0" layoutY="115.0" prefHeight="182.0" prefWidth="213.0" styleClass="shadow">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="121.80003662109375" minWidth="10.0" prefWidth="76.9999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.4000244140625" minWidth="10.0" prefWidth="61.000024414062494" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="162.4000244140625" minWidth="10.0" prefWidth="17.199951171875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.4000244140625" minWidth="10.0" prefWidth="62.00004882812499" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Monday" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tuesday" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wednesday" GridPane.rowIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thursday" GridPane.rowIndex="3" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Friday" GridPane.rowIndex="4" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="moSt" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="1">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="tuSt" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="weSt" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="thSt" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="frSt" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="moFn" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="3">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="tuFn" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="weFn" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="thFn" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="frFn" alignment="CENTER" editable="false" styleClass="defInput" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <Text layoutX="528.0" layoutY="101.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="extrabold" text="Work Schedule" textAlignment="CENTER" wrappingWidth="186.59995117187498">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <DisplacementMap>
+                           <mapData>
+                              <FloatMap />
+                           </mapData>
+                        </DisplacementMap>
+                     </effect>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="statsBlock" layoutX="63.0" layoutY="117.0" prefHeight="369.0" prefWidth="748.0" visible="false">
+               <children>
+                  <Text fx:id="allWorkers" fill="#43a130" layoutX="5.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54" textAlignment="CENTER" wrappingWidth="130.39999084472674">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="39.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Workers">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of salaries:" wrappingWidth="186.5999511718751">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistics">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="27.0" />
+                     </font>
+                  </Text>
+                  <Text layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of bonuses:" wrappingWidth="150.4000000000001">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="allsalaries" fill="#43a130" layoutX="-2.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="540900 soms" wrappingWidth="397.60003662109375">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="allbonuses" fill="#43a130" layoutX="-2.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24900 soms" wrappingWidth="455.20001220703125">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="allhrs" fill="#43a130" layoutX="5.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" wrappingWidth="130.39999084472674">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="24.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HRManagers">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="14.0" />
+                     </font>
+                  </Text>
+                  <PieChart fx:id="genderChart" layoutX="476.0" prefHeight="214.0" prefWidth="272.0" title="Gender Ratio" />
+                  <PieChart fx:id="salaryChart" layoutX="204.0" prefHeight="214.0" prefWidth="272.0" title="Salary Ratio" />
+                  <Text layoutX="415.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biggest salary:" wrappingWidth="186.5999511718751">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="bigsalary" fill="#43a130" layoutX="413.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="34800 soms" wrappingWidth="397.60003662109375">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="415.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biggest bonus:" wrappingWidth="186.5999511718751">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="bigbonus" fill="#43a130" layoutX="413.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10500 soms" wrappingWidth="397.60003662109375">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@director.css" />
+   </stylesheets>
+</StackPane>

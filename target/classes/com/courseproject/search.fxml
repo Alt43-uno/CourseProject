@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane id="main" prefHeight="524.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.courseproject.SearchController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="753.0">
+         <children>
+            <Pane id="logBlock" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="751.0" style="-fx-background-radius: 25px;" styleClass="pane">
+               <children>
+                  <TableView fx:id="SearchTable" layoutX="31.0" layoutY="83.0" prefHeight="275.0" prefWidth="689.0">
+                     <columns>
+                        <TableColumn fx:id="SearchIDColumn" prefWidth="40.80001449584961" text="ID" />
+                        <TableColumn fx:id="SearchNameColumn" prefWidth="160.8000030517578" text="Name" />
+                        <TableColumn fx:id="SearchRoleColumn" prefWidth="84.80000305175781" text="Role" />
+                        <TableColumn fx:id="SearchPositionColumn" prefWidth="110.4000244140625" text="Position" />
+                        <TableColumn fx:id="SearchSalaryColumn" prefWidth="98.39996337890625" text="Salary" />
+                        <TableColumn fx:id="SearchBonusColumn" prefWidth="115.20001220703125" text="Bonus" />
+                        <TableColumn fx:id="SearchStatusColumn" prefWidth="73.800048828125" text="Status" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="SearchField" layoutX="31.0" layoutY="40.0" prefHeight="27.0" prefWidth="324.0" promptText="Keywords.." styleClass="defInput" />
+               </children>
+            </Pane>
+            <Pane id="logBlock" layoutY="1.0" prefHeight="60.0" prefWidth="254.0" style="-fx-background-radius: 25px;" styleClass="pane">
+               <children>
+                  <Text layoutX="8.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search employee" textAlignment="CENTER" wrappingWidth="238.8000030517578">
+                     <font>
+                        <Font name="Open Sans ExtraBold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@director.css" />
+   </stylesheets>
+</StackPane>

@@ -1,0 +1,17 @@
+.tableview{
+
+
+
+}
+#main {
+    -fx-background-color: linear-gradient(to top right,#FFFFFF, #2CEEB8);
+}
+#applybutton{
+    -fx-background-color: linear-gradient(to top right, #a7d097, #36c731);
+}
+#logoutbutton{
+    -fx-background-color: linear-gradient(to top right, #be7f7f, #c73154);
+}
+#allbutton{
+    -fx-background-color: linear-gradient(to top right, #89cbd0, #2ceeb8);
+}

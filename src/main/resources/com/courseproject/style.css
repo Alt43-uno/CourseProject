@@ -1,0 +1,148 @@
+#main {
+    -fx-background-color: linear-gradient(to top right,#1485E6, #2CEEB8);
+}
+#logBlock {
+    -fx-background-color: rgba(255,255,255,1);
+    -fx-border-radius: 25;
+}
+#errorText  {
+    -fx-fill-text: #ff0ff0;
+}
+#greenText  {
+    -fx-fill-text: #0ff0ff;
+}
+.button {
+    -fx-background-color: linear-gradient(to top right,#1485E6, #2CEEB8);
+}
+.button:hover {
+    -fx-background-color: linear-gradient(to top right, #0e60a5, #1b9473);
+}
+.button.logout {
+    -fx-background-color: linear-gradient(to top right, #e65d5d, #c73154);
+}
+.button.logout:hover {
+    -fx-background-color: linear-gradient(to top right, #993e3e, #872139);
+}
+.button.apply {
+    -fx-background-color: linear-gradient(to top right, #5de674, #36c731);
+}
+.button.apply:hover {
+    -fx-background-color: linear-gradient(to top right, #3c954a, #248221);
+}
+.button.menu {
+    -fx-background-color: linear-gradient(to top right, #295389, #315bc7);
+}
+.defInput {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #1485E6;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+}
+.profileBlock {
+    -fx-background-radius: 20px;
+    -fx-background-color: rgba(255,255,255,.6);
+}
+
+.table-menu {
+    -fx-background-color: #324562;
+}
+.table-view {
+    -fx-border-width: 0;
+
+}
+.table-view .column-header-background{
+    -fx-background-color: #324562;
+    -fx-border-width: 0;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: black;
+}
+.white-button {
+    -fx-background-color: white;
+    -fx-border-radius: 25;
+    -fx-background-radius: 10   ;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+.pane {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+
+}
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+
+}
+
+.circle-pane {
+    -fx-background-color: #1e90ff;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('./fonts/OpenSans-Medium.ttf');
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('./fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'Open Sans Extra';
+    src: url('./fonts/OpenSans-ExtraBold.ttf');
+}
+
+
+.regular {
+    -fx-font-family: "Open Sans Regular";
+}
+.bold {
+    -fx-font-family: "Open Sans Bold";
+}
+.extrabold {
+    -fx-font-family: "Open Sans Extra";
+}
+.logout {
+
+}
+
+* {
+    -fx-primary-color: #007acc;
+    -fx-secondary-color: #4B6EAF;
+
+    -fx-focus-color: -fx-secondary-color;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: -fx-primary-color;
+    -fx-background-radius: 0;
+}
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: -fx-secondary-color;
+}
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+    -fx-background-color: -fx-secondary-color;
+}
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}
+
+.default-color0.chart-pie { -fx-pie-color: #315bc7;}
+.default-color1.chart-pie { -fx-pie-color: #ee2c59;}
+.default-color2.chart-pie { -fx-pie-color: #2cee36;}
+.default-color3.chart-pie { -fx-pie-color: #c78131;}
